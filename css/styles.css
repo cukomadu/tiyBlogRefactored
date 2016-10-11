@@ -403,6 +403,9 @@ img {
   height: 100vh;
   display: flex;
   font-size: 0;
+  vertical-align: top;
+  /* LEFT SIDEBAR STYLES */
+  /* MAIN SECTION STYLES */
   /* FIXED SIDEBAR STYLES */ }
   .main-content .left-aside {
     flex: 1;
@@ -435,7 +438,30 @@ img {
   .main-content .main-body {
     flex: 2;
     border: 1px solid #bbbbbb;
-    margin: 10px 15px; }
+    margin: 10px; }
+    .main-content .main-body h1 {
+      font-size: 30px;
+      font-weight: bold;
+      text-align: left;
+      margin-top: 0;
+      margin-bottom: 5px;
+      line-height: 35px; }
+    .main-content .main-body em {
+      font-size: 12px;
+      margin-bottom: 5%;
+      line-height: 35px; }
+      .main-content .main-body em span {
+        color: #515ed8; }
+    .main-content .main-body img {
+      width: 100%;
+      display: block;
+      height: 35vh;
+      margin-top: 10px; }
+    .main-content .main-body p {
+      font-size: 14px;
+      line-height: 25px;
+      margin: 2%;
+      width: 100%; }
   .main-content .fixed-aside {
     position: fixed;
     bottom: 0;

@@ -36,7 +36,6 @@ img {
 	max-width: 100%;
 	position: relative;
 
-
 	img {
 		width: 7%;
 		border-radius: 50%;
@@ -56,7 +55,9 @@ img {
 	height: 100vh;
 	display: flex;
 	font-size: 0;
+	vertical-align: top;
 
+	/* LEFT SIDEBAR STYLES */
 	.left-aside {
 		flex: 1;
 		border: 1px solid $color-lightgrey;
@@ -97,14 +98,48 @@ img {
 		}
 	}
 
+	/* MAIN SECTION STYLES */
 	.main-body {
 		flex: 2;
 		border: 1px solid $color-lightgrey;
-		margin: 10px 15px;
+		margin: 10px;	
+
+		h1 {
+			font-size: 30px;
+			font-weight: bold;
+			text-align: left;
+			margin-top: 0;
+			margin-bottom: 5px;
+			line-height: 35px;
+		}
+
+		em {
+			font-size: 12px;
+			margin-bottom: 5%;
+			line-height: 35px;
+
+			span {
+				color: $color-blue;
+			}
+
+		}
+
+		img {
+			width: 100%;
+   			display: block;
+   			height: 35vh;
+   			margin-top: 10px;
+		}
+
+		p {
+			font-size: 14px;
+			line-height: 25px;
+			margin: 2%;
+			width: 100%;
+		}
 	}
 
 	/* FIXED SIDEBAR STYLES */
-
 	.fixed-aside {
 		position: fixed;
 		bottom: 0;
@@ -117,6 +152,5 @@ img {
 		margin-bottom: 75px;
 		border-radius: 5px;
 	}
-
 }
 
