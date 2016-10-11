@@ -1,12 +1,14 @@
 @import "./imports/_normalize.scss";
 
 /* SASS VARIABLES ................*/
+
 $color-darkgrey: #1e1d1d;
 $color-blue: #515ed8;
 $color-lightgrey: #bbbbbb;
 $color-white: #ffffff;
 
 /* BASE STYLES ....................*/
+
 * { 
    box-sizing: border-box;
    font-family: "Roboto", sans-serif; 
@@ -17,8 +19,9 @@ img {
 }
 
 #app-container{
-   max-width: 960px;
-   
+   max-width: 100%; 
+   display: block;
+
 }
 
 
@@ -29,19 +32,91 @@ img {
 	background: url("http://magentanova.github.io/html-intro-1/images/houston.jpg");
 	background-size: cover;
 	background-position: center; 
+	display: block;
+	max-width: 100%;
 	position: relative;
-	/*width: 1300px; */
+
 
 	img {
 		width: 7%;
 		border-radius: 50%;
 		position: absolute;
 		border: 4px solid $color-white;
-		top: 90%;
+		top: 85%;
 		left: 15%;
 	}
 }
 
 /* MAIN CONTENT STYLES */
 
+.main-content {
+	max-width: 60%;
+	margin: 5% auto;
+	border: 1px solid $color-lightgrey;
+	height: 100vh;
+	display: flex;
+	font-size: 0;
+
+	.left-aside {
+		flex: 1;
+		border: 1px solid $color-lightgrey;
+		margin: 10px;
+
+		h6 {
+			color: $color-darkgrey;
+			font-size: medium;
+			font-weight: bold;
+		}
+
+		p {
+			color: $color-lightgrey;
+			font-size: 14px;
+			margin-top: -7px;
+			font-weight: bold;
+		}
+
+		hr {
+			color: $color-lightgrey;
+			font-size: 14px;
+			margin-top: -17px;
+		}
+
+		#search-text {
+			color: $color-lightgrey;
+			font-size: medium;
+			margin-top: -20px;
+			font-weight: bold;
+		}
+
+		input {
+			color: $color-lightgrey;
+			font-size: 12px;
+			width: 100%;
+			margin-top: -3px;
+			padding-left: 4px;
+		}
+	}
+
+	.main-body {
+		flex: 2;
+		border: 1px solid $color-lightgrey;
+		margin: 10px 15px;
+	}
+
+	/* FIXED SIDEBAR STYLES */
+
+	.fixed-aside {
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		width: 200px;
+		border: 1px solid $color-lightgrey;
+		height: 10vh;
+		margin-left: 30px;
+		margin-right: 5px;
+		margin-bottom: 75px;
+		border-radius: 5px;
+	}
+
+}
 

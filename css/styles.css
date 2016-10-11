@@ -375,7 +375,8 @@ img {
   display: block; }
 
 #app-container {
-  max-width: 960px; }
+  max-width: 100%;
+  display: block; }
 
 /* HEADER STYLES .................*/
 .main-header {
@@ -383,16 +384,68 @@ img {
   background: url("http://magentanova.github.io/html-intro-1/images/houston.jpg");
   background-size: cover;
   background-position: center;
-  position: relative;
-  /*width: 1300px; */ }
+  display: block;
+  max-width: 100%;
+  position: relative; }
   .main-header img {
     width: 7%;
     border-radius: 50%;
     position: absolute;
     border: 4px solid #ffffff;
-    top: 90%;
+    top: 85%;
     left: 15%; }
 
 /* MAIN CONTENT STYLES */
+.main-content {
+  max-width: 60%;
+  margin: 5% auto;
+  border: 1px solid #bbbbbb;
+  height: 100vh;
+  display: flex;
+  font-size: 0;
+  /* FIXED SIDEBAR STYLES */ }
+  .main-content .left-aside {
+    flex: 1;
+    border: 1px solid #bbbbbb;
+    margin: 10px; }
+    .main-content .left-aside h6 {
+      color: #1e1d1d;
+      font-size: medium;
+      font-weight: bold; }
+    .main-content .left-aside p {
+      color: #bbbbbb;
+      font-size: 14px;
+      margin-top: -7px;
+      font-weight: bold; }
+    .main-content .left-aside hr {
+      color: #bbbbbb;
+      font-size: 14px;
+      margin-top: -17px; }
+    .main-content .left-aside #search-text {
+      color: #bbbbbb;
+      font-size: medium;
+      margin-top: -20px;
+      font-weight: bold; }
+    .main-content .left-aside input {
+      color: #bbbbbb;
+      font-size: 12px;
+      width: 100%;
+      margin-top: -3px;
+      padding-left: 4px; }
+  .main-content .main-body {
+    flex: 2;
+    border: 1px solid #bbbbbb;
+    margin: 10px 15px; }
+  .main-content .fixed-aside {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    border: 1px solid #bbbbbb;
+    height: 10vh;
+    margin-left: 30px;
+    margin-right: 5px;
+    margin-bottom: 75px;
+    border-radius: 5px; }
 
 /*# sourceMappingURL=styles.css.map */
