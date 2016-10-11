@@ -1,5 +1,11 @@
 @import "./imports/_normalize.scss";
 
+/* SASS VARIABLES ................*/
+$color-darkgrey: #1e1d1d;
+$color-blue: #515ed8;
+$color-lightgrey: #bbbbbb;
+$color-white: #ffffff;
+
 /* BASE STYLES ....................*/
 * { 
    box-sizing: border-box;
@@ -12,7 +18,30 @@ img {
 
 #app-container{
    max-width: 960px;
+   
 }
 
-/* CONTENT STYLES .................*/
+
+/* HEADER STYLES .................*/
+
+.main-header {
+	height: 45vh;
+	background: url("http://magentanova.github.io/html-intro-1/images/houston.jpg");
+	background-size: cover;
+	background-position: center; 
+	position: relative;
+	/*width: 1300px; */
+
+	img {
+		width: 7%;
+		border-radius: 50%;
+		position: absolute;
+		border: 4px solid $color-white;
+		top: 90%;
+		left: 15%;
+	}
+}
+
+/* MAIN CONTENT STYLES */
+
 
