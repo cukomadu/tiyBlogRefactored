@@ -399,7 +399,7 @@ img {
 .main-content {
   max-width: 60%;
   margin: 5% auto;
-  border: 1px solid #bbbbbb;
+  /*border: 1px solid $color-lightgrey; */
   height: 100vh;
   display: flex;
   font-size: 0;
@@ -409,7 +409,7 @@ img {
   /* FIXED SIDEBAR STYLES */ }
   .main-content .left-aside {
     flex: 1;
-    border: 1px solid #bbbbbb;
+    /*border: 1px solid $color-lightgrey; */
     margin: 10px; }
     .main-content .left-aside h6 {
       color: #1e1d1d;
@@ -437,7 +437,7 @@ img {
       padding-left: 4px; }
   .main-content .main-body {
     flex: 2;
-    border: 1px solid #bbbbbb;
+    /*border: 1px solid $color-lightgrey; */
     margin: 10px; }
     .main-content .main-body h1 {
       font-size: 30px;

@@ -51,7 +51,7 @@ img {
 .main-content {
 	max-width: 60%;
 	margin: 5% auto;
-	border: 1px solid $color-lightgrey;
+	/*border: 1px solid $color-lightgrey; */
 	height: 100vh;
 	display: flex;
 	font-size: 0;
@@ -60,7 +60,7 @@ img {
 	/* LEFT SIDEBAR STYLES */
 	.left-aside {
 		flex: 1;
-		border: 1px solid $color-lightgrey;
+		/*border: 1px solid $color-lightgrey; */
 		margin: 10px;
 
 		h6 {
@@ -101,7 +101,7 @@ img {
 	/* MAIN SECTION STYLES */
 	.main-body {
 		flex: 2;
-		border: 1px solid $color-lightgrey;
+		/*border: 1px solid $color-lightgrey; */
 		margin: 10px;	
 
 		h1 {
