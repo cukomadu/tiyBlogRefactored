@@ -397,10 +397,10 @@ img {
 
 /* MAIN CONTENT STYLES */
 .main-content {
-  max-width: 60%;
-  margin: 5% auto;
+  max-width: 65%;
+  margin: 40px 260px;
   /*border: 1px solid $color-lightgrey; */
-  height: 100vh;
+  /*height: 100vh; */
   display: flex;
   font-size: 0;
   vertical-align: top;
@@ -410,7 +410,8 @@ img {
   .main-content .left-aside {
     flex: 1;
     /*border: 1px solid $color-lightgrey; */
-    margin: 10px; }
+    margin: 10px;
+    max-width: 28%; }
     .main-content .left-aside h6 {
       color: #1e1d1d;
       font-size: medium;
@@ -438,20 +439,21 @@ img {
   .main-content .main-body {
     flex: 2;
     /*border: 1px solid $color-lightgrey; */
-    margin: 10px; }
+    margin: 10px;
+    max-width: 58%; }
     .main-content .main-body h1 {
       font-size: 30px;
       font-weight: bold;
       text-align: left;
       margin-top: 0;
       margin-bottom: 5px;
-      line-height: 35px; }
+      line-height: 40px; }
     .main-content .main-body em {
       font-size: 12px;
       margin-bottom: 5%;
       line-height: 35px; }
       .main-content .main-body em span {
-        color: #515ed8; }
+        color: #4285f4; }
     .main-content .main-body img {
       width: 100%;
       display: block;
@@ -466,12 +468,51 @@ img {
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 200px;
+    width: 230px;
     border: 1px solid #bbbbbb;
-    height: 10vh;
-    margin-left: 30px;
+    height: 12vh;
+    /*margin-left: 90px; */
     margin-right: 5px;
-    margin-bottom: 75px;
-    border-radius: 5px; }
+    margin-bottom: 60px;
+    border-radius: 5px;
+    vertical-align: top; }
+    .main-content .fixed-aside #fixed-aside-text {
+      color: #1e1d1d;
+      border-bottom: 1px solid #bbbbbb;
+      font-weight: bolder;
+      padding: 2%;
+      margin-bottom: 2%;
+      font-size: small; }
+    .main-content .fixed-aside .fixed-aside-flexbox {
+      display: inline-block;
+      font-size: 0;
+      margin-left: 5px; }
+      .main-content .fixed-aside .fixed-aside-flexbox img {
+        max-width: 30px;
+        border-radius: 2px;
+        display: inline-block; }
+    .main-content .fixed-aside button {
+      display: inline-block;
+      width: 70px;
+      margin-left: 7px;
+      height: 5vh;
+      font-size: small;
+      padding-left: 0px;
+      padding-right: 0px;
+      text-align: center;
+      vertical-align: top;
+      color: #ffffff;
+      background: #4285f4;
+      border-color: #4285f4; }
+    .main-content .fixed-aside #align-fixed-children {
+      display: inline-block;
+      max-width: 108px;
+      margin-left: 5px; }
+      .main-content .fixed-aside #align-fixed-children p, .main-content .fixed-aside #align-fixed-children strong {
+        font-size: 10px;
+        margin-bottom: 0 !important;
+        margin-top: 0; }
+      .main-content .fixed-aside #align-fixed-children strong {
+        font-weight: bold; }
 
 /*# sourceMappingURL=styles.css.map */

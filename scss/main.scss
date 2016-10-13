@@ -3,7 +3,7 @@
 /* SASS VARIABLES ................*/
 
 $color-darkgrey: #1e1d1d;
-$color-blue: #515ed8;
+$color-blue: #4285f4;
 $color-lightgrey: #bbbbbb;
 $color-white: #ffffff;
 
@@ -49,10 +49,10 @@ img {
 /* MAIN CONTENT STYLES */
 
 .main-content {
-	max-width: 60%;
-	margin: 5% auto;
+	max-width: 65%;
+	margin: 40px 260px;
 	/*border: 1px solid $color-lightgrey; */
-	height: 100vh;
+	/*height: 100vh; */
 	display: flex;
 	font-size: 0;
 	vertical-align: top;
@@ -62,6 +62,7 @@ img {
 		flex: 1;
 		/*border: 1px solid $color-lightgrey; */
 		margin: 10px;
+		max-width: 28%;
 
 		h6 {
 			color: $color-darkgrey;
@@ -103,6 +104,7 @@ img {
 		flex: 2;
 		/*border: 1px solid $color-lightgrey; */
 		margin: 10px;	
+		max-width: 58%;
 
 		h1 {
 			font-size: 30px;
@@ -110,7 +112,7 @@ img {
 			text-align: left;
 			margin-top: 0;
 			margin-bottom: 5px;
-			line-height: 35px;
+			line-height: 40px;
 		}
 
 		em {
@@ -144,13 +146,67 @@ img {
 		position: fixed;
 		bottom: 0;
 		right: 0;
-		width: 200px;
+		width: 230px;
 		border: 1px solid $color-lightgrey;
-		height: 10vh;
-		margin-left: 30px;
+		height: 12vh;
+		/*margin-left: 90px; */
 		margin-right: 5px;
-		margin-bottom: 75px;
+		margin-bottom: 60px; 
 		border-radius: 5px;
+		vertical-align: top;
+
+		#fixed-aside-text {
+			color: $color-darkgrey;
+			border-bottom: 1px solid $color-lightgrey;
+			font-weight: bolder;
+			padding: 2%;
+			margin-bottom: 2%;
+			font-size: small;
+		}
+
+		.fixed-aside-flexbox {
+			display: inline-block;
+			font-size: 0;
+			margin-left: 5px; 
+
+			img {
+				max-width: 30px;
+				border-radius: 2px;
+				display: inline-block;
+			}
+		}
+
+		button {
+			display: inline-block;
+			width: 70px;
+		    margin-left: 7px;
+		    height: 5vh;
+		    font-size: small;
+		    padding-left: 0px;
+		    padding-right: 0px;
+		    text-align: center;
+		    vertical-align: top;
+		    color: $color-white;
+		    background: $color-blue;
+		    border-color: $color-blue;
+
+		}	
+
+		#align-fixed-children {
+			display: inline-block;
+			max-width: 108px;	
+    		margin-left: 5px;
+
+			p, strong {
+				font-size: 10px;
+				margin-bottom: 0 !important;
+				margin-top: 0;
+			}
+
+			strong {
+				font-weight: bold;
+			}
+		}
 	}
 }
 
